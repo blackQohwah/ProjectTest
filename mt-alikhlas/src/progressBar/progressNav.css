@@ -1,0 +1,21 @@
+#progressNavContainer {
+    position: fixed;
+    z-index: 10;
+    background: rgba(255,255,255,0.05);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+  
+  
+#progressNav {
+    background: linear-gradient(to left, #91ca91, #91ca91);
+    transform-origin: top right;
+    transform: scale(0,0);
+    opacity: 0;
+}
+
+#progressNavContainer,
+#progressNav {
+    height: 60px;
+}
