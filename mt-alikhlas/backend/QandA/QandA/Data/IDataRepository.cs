@@ -20,5 +20,6 @@ namespace QandA.Data
         Task<QuestionGetSingleResponse> PutQuestion(int questionId, QuestionPutRequest question);
         Task DeleteQuestion(int questionId);
         Task<AnswerGetResponse> PostAnswer(AnswerPostFullRequest answer);
+        Task<IEnumerable<QuestionGetManyResponse>> GetAnsweredQuestions();
     }
 }

@@ -62,7 +62,6 @@ export const QuestionPage: FC<RouteComponentProps<RouteParams>> = ({
       return connection;
    };
 
-   //* P/318
    const cleanUpSignalRConnection = async (
       questionId: number,
       connection: HubConnection
@@ -128,7 +127,6 @@ export const QuestionPage: FC<RouteComponentProps<RouteParams>> = ({
                box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.16);
             `}
          >
-            {' '}
             <div
                css={css`
                   font-size: 19px;
@@ -136,7 +134,7 @@ export const QuestionPage: FC<RouteComponentProps<RouteParams>> = ({
                   margin: 10px 0px 5px;
                `}
             >
-               {question === null ? '' : question.title}{' '}
+               {question === null ? '' : question.title}
             </div>
             {question !== null && (
                <Fragment>

@@ -10,7 +10,7 @@ import { QuestionList } from './QuestionsList';
 
 interface Props {
    data: QuestionData;
-   showContent?: any;
+   showContent?: boolean;
 }
 
 export const Question: FC<Props> = ({ data, showContent = true }) => (

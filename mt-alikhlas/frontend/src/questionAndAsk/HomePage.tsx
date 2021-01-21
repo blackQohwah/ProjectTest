@@ -3,7 +3,11 @@ import { useEffect, useState, FC } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import { QuestionList } from './QuestionsList';
 import { PrimaryButton } from './Styles';
-import { getUnansweredQuestions, QuestionData } from './QuestionsData';
+import {
+   getAnsweredQuestions,
+   getUnansweredQuestions,
+   QuestionData,
+} from './QuestionsData';
 import { Page } from './Page';
 import { PageTitle } from './PageTitle';
 import { get } from 'https';
@@ -15,11 +19,11 @@ import { css, jsx } from '@emotion/react';
 const renderQuestion = (question: QuestionData) => <div>{question.title}</div>;
 
 export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
-   const [questions, setQuestions] = useState<QuestionData[] | null>(null);
+   const [unanswered, setUnanswered] = useState<QuestionData[] | null>(null);
+
+   const [answered, setAnswered] = useState<QuestionData[] | null>(null);
 
    const [questionsLoading, setQuestionsLoading] = useState(true);
-
-   const [count, setCount] = useState(0);
 
    const handleAskQuestionClick = () => history.push('/ask');
 
@@ -27,13 +31,21 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
 
    useEffect(() => {
       let cancelled = false;
-      const goGetUnansweredQuestions = async () => {
-         const unsweredQuestions = await getUnansweredQuestions();
+      const goGetAnsweredQuestions = async () => {
+         const answeredQuestions = await getAnsweredQuestions();
          if (!cancelled) {
-            setQuestions(unsweredQuestions);
+            setAnswered(answeredQuestions);
             setQuestionsLoading(false);
          }
       };
+      const goGetUnansweredQuestions = async () => {
+         const unsweredQuestions = await getUnansweredQuestions();
+         if (!cancelled) {
+            setUnanswered(unsweredQuestions);
+            setQuestionsLoading(false);
+         }
+      };
+      goGetAnsweredQuestions();
       goGetUnansweredQuestions();
       return () => {
          cancelled = true;
@@ -45,7 +57,7 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
             css={css`
                margin: 5px auto 20px auto;
                padding: 30px 20px;
-               max-width: 600px;
+               max-width: 1700px;
             `}
          >
             <div
@@ -70,7 +82,14 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
                   Loading...
                </div>
             ) : (
-               <QuestionList data={questions || []} />
+               <div className="row">
+                  <div className="col-6">
+                     <QuestionList data={unanswered || []} />
+                  </div>
+                  <div className="col-6">
+                     <QuestionList data={answered || []} />
+                  </div>
+               </div>
             )}
          </div>
       </Page>

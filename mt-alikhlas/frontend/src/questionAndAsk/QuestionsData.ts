@@ -11,6 +11,14 @@ export interface QuestionData {
    created: Date;
    answers: AnswerData[];
 }
+export interface QuestionData1 {
+   questionId: number;
+   title: string;
+   content: string;
+   userName: string;
+   created: Date;
+   answers: AnswerData[];
+}
 
 export interface AnswerData {
    answerId: number;
@@ -148,6 +156,23 @@ export const getUnansweredQuestions = async (): Promise<QuestionData[]> => {
    try {
       const result = await http<undefined, QuestionDataFromServer[]>({
          path: '/questions/unanswered',
+      });
+      if (result.parsedBody) {
+         return result.parsedBody.map(mapQuestionFromServer);
+      } else {
+         console.log(result);
+         return [];
+      }
+   } catch (ex) {
+      console.error(ex);
+      return [];
+   }
+};
+
+export const getAnsweredQuestions = async (): Promise<QuestionData1[]> => {
+   try {
+      const result = await http<undefined, QuestionDataFromServer[]>({
+         path: '/questions/answered',
       });
       if (result.parsedBody) {
          return result.parsedBody.map(mapQuestionFromServer);

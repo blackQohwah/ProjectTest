@@ -16,16 +16,15 @@ import { AskPage } from './questionAndAsk/AskPage';
 import { HomePage } from './questionAndAsk/HomePage';
 import { SearchPage } from './questionAndAsk/SearchPage';
 import { QuestionPage } from './questionAndAsk/QuestionPage';
+import { SignInPage } from './questionAndAsk/SignInPage';
+import { SignOutPage } from './questionAndAsk/SignOutPage';
 import { NotFoundPage } from './questionAndAsk/NotFoundPage';
-import AOS from 'aos';
 /**
  * @jsxRuntime classic
  * @jsx jsx
  */
 import { css, jsx } from '@emotion/react';
 import { AuthProvider } from './questionAndAsk/Auth';
-
-AOS.init();
 
 function App() {
    const [loading, setLoading] = useState(false);
@@ -77,6 +76,30 @@ function App() {
                         <Route path="/ask">
                            <AskPage />
                         </Route>
+                        <Route
+                           path="/questions/:questionId"
+                           component={QuestionPage}
+                        />
+                        <Route
+                           path="/signin"
+                           render={() => <SignInPage action="signin" />}
+                        />
+                        <Route
+                           path="/signin-callback"
+                           render={() => (
+                              <SignInPage action="signin-callback" />
+                           )}
+                        />
+                        <Route
+                           path="/signout"
+                           render={() => <SignOutPage action="signout" />}
+                        />
+                        <Route
+                           path="/signout-callback"
+                           render={() => (
+                              <SignOutPage action="signout-callback" />
+                           )}
+                        />
                         <Route
                            path="/questions/:questionId"
                            component={QuestionPage}

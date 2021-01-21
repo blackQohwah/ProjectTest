@@ -15,7 +15,7 @@ export const Page: FC<Props> = ({ title, children }) => {
          css={css`
             margin: 0px auto 20px auto;
             padding: 30px 20px;
-            max-width: 600px;
+            max-width: 1000px;
          `}
       >
          {title && <PageTitle> {title} </PageTitle>}

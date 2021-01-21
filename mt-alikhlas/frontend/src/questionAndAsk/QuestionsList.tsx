@@ -4,11 +4,11 @@ import { FC } from 'react';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
 import { accent2, gray5 } from './Styles';
-import { QuestionData } from './QuestionsData';
+import { QuestionData, QuestionData1 } from './QuestionsData';
 import { Question } from './Question';
 
 interface Props {
-   data: QuestionData[];
+   data: QuestionData1[];
    renderItem?: (item: QuestionData) => JSX.Element;
 }
 
