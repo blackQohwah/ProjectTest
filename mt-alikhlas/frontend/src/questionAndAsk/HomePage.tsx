@@ -11,7 +11,6 @@ import {
 import { Page } from './Page';
 import { PageTitle } from './PageTitle';
 import { get } from 'https';
-import { useAuth } from './Auth';
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { css, jsx } from '@emotion/react';
@@ -26,8 +25,6 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
    const [questionsLoading, setQuestionsLoading] = useState(true);
 
    const handleAskQuestionClick = () => history.push('/ask');
-
-   const { isAuthenticated } = useAuth();
 
    useEffect(() => {
       let cancelled = false;
@@ -64,12 +61,11 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
                css={css`
                   display: flex;
                   align-items: center;
-                  justify-content: space-between;
+                  justify-content: center;
                `}
             >
-               <PageTitle> Unanswered Question </PageTitle>
                <PrimaryButton onClick={handleAskQuestionClick}>
-                  Ask a Question
+                  Menayakan Pertanyaan
                </PrimaryButton>
             </div>
             {questionsLoading ? (
@@ -82,11 +78,13 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
                   Loading...
                </div>
             ) : (
-               <div className="row">
+               <div className="row pt-1">
                   <div className="col-6">
+                     <PageTitle> Pertanyaan Belum Terjawab </PageTitle>
                      <QuestionList data={unanswered || []} />
                   </div>
                   <div className="col-6">
+                     <PageTitle> Pertanyaan Sudah Terjawab </PageTitle>
                      <QuestionList data={answered || []} />
                   </div>
                </div>

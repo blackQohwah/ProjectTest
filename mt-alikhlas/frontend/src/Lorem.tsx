@@ -4,14 +4,6 @@ export const LoremText = () => {
          <br />
          <br />
          <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
       </div>
    );
 };

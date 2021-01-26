@@ -6,10 +6,10 @@ AOS.init();
 
 export const About = () => {
    return (
-      <section className="about mt-5">
+      <section className="about mt-5 p-5">
          <div className="container" data-aos="fade-up" data-aos-delay="500">
             <div className="section-title">
-               <h2>About Us</h2>
+               <h2 className="p-5">About Us</h2>
             </div>
             <div className="row content">
                <div className="col-lg-6">
@@ -20,6 +20,7 @@ export const About = () => {
                      cupiditate aliquid, incidunt hic illum sapiente qui!
                      Aperiam.
                   </p>
+                  <br /> <br />
                </div>
                <div className="col-lg-6 pt-4 pt-lg-0">
                   <p>
@@ -29,6 +30,7 @@ export const About = () => {
                      occaecat cupidatat non proident, sunt in culpa qui officia
                      deserunt mollit anim id est laborum.
                   </p>
+                  <br /> <br />
                </div>
             </div>
          </div>

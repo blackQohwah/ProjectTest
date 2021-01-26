@@ -56,7 +56,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                align-items: center;
                justify-content: space-between;
                padding: 10px 20px;
-               background-color: #fff;
+               background-color: #b2e0b2;
                border-bottom: 1px solid ${gray5};
                box-shadow: 0 3px 7px 0 rgba(110, 112, 114, 0.21);
             `}
@@ -72,7 +72,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                   text-decoration: none;
                `}
             >
-               Q & A
+               Kembali
             </Link>
             <form onSubmit={handleSearchSubmit}>
                <input
@@ -89,7 +89,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                      border-radius: 3px;
                      color: ${gray2};
                      background-color: white;
-                     width: 200px;
+                     width: 300px;
                      height: 30px;
                      :focus {
                         outline-color: ${gray5};

@@ -11,6 +11,7 @@ import { Hero } from './hero/Hero';
 import { DividerAbout } from './divider/DividerAbout';
 import { DividerQandA } from './divider/DividerQandA';
 import { About } from './about/About';
+import { Footer } from './footer/Footer';
 import { HeaderWithRouter as HeaderQandA } from './questionAndAsk/HeaderQanA';
 import { AskPage } from './questionAndAsk/AskPage';
 import { HomePage } from './questionAndAsk/HomePage';
@@ -65,9 +66,8 @@ function App() {
                      <LoremText />
                      <About />
                      <LoremText />
-                     {/* <DividerQandA>
-                        <ProgressNav />
-                     </DividerQandA> */}
+                     <DividerQandA />
+                     <LoremText />
                      <HeaderQandA />
                      <Switch>
                         <Redirect from="/index.html" to="/" />
@@ -107,6 +107,7 @@ function App() {
                         <Route component={NotFoundPage} />
                      </Switch>
                      <LoremText />
+                     <Footer />
                   </div>
                </BrowserRouter>
             </AuthProvider>

@@ -17,7 +17,7 @@ export const Hero = () => {
                         Bertanya ???
                      </a>
                      <a
-                        href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+                        href="#"
                         className="venobox btn-watch-video"
                         data-vbtype="video"
                         data-autoplay="true"

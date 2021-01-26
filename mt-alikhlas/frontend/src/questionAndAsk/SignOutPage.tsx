@@ -15,7 +15,8 @@ export const SignOutPage: FC<Props> = ({ action }) => {
          signOut();
          break;
       case 'signout-callback':
-         message = 'You successfully signed out!';
+         message = `You successfully signed out!
+         Click Back for direct to Main Page`;
          break;
    }
    return (
