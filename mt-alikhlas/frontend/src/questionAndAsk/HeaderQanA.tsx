@@ -77,7 +77,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
             <form onSubmit={handleSearchSubmit}>
                <input
                   type="text"
-                  placeholder="Search..."
+                  placeholder="Cari Pertanyaan..."
                   onChange={handleSearchInputChange}
                   value={search}
                   css={css`
@@ -89,7 +89,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                      border-radius: 3px;
                      color: ${gray2};
                      background-color: white;
-                     width: 300px;
+                     width: 200px;
                      height: 30px;
                      :focus {
                         outline-color: ${gray5};

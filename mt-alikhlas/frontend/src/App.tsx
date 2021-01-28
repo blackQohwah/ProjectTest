@@ -11,6 +11,7 @@ import { Hero } from './hero/Hero';
 import { DividerAbout } from './divider/DividerAbout';
 import { DividerQandA } from './divider/DividerQandA';
 import { About } from './about/About';
+import { Imageslider } from './gallery/ImageSlider';
 import { Footer } from './footer/Footer';
 import { HeaderWithRouter as HeaderQandA } from './questionAndAsk/HeaderQanA';
 import { AskPage } from './questionAndAsk/AskPage';
@@ -26,6 +27,7 @@ import { NotFoundPage } from './questionAndAsk/NotFoundPage';
  */
 import { css, jsx } from '@emotion/react';
 import { AuthProvider } from './questionAndAsk/Auth';
+import { SliderData } from './gallery/SliderData';
 
 function App() {
    const [loading, setLoading] = useState(false);
@@ -65,6 +67,7 @@ function App() {
                      </DividerAbout>
                      <LoremText />
                      <About />
+                     <Imageslider />
                      <LoremText />
                      <DividerQandA />
                      <LoremText />

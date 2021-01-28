@@ -48,11 +48,11 @@ export const FormContext = createContext<FormContextProps>({
 type Validator = (value: any, args?: any) => string;
 export const required: Validator = (value: any): string =>
    value === undefined || value === null || value === ''
-      ? 'This must be populated'
+      ? 'ini harus diisi'
       : '';
 export const minLength: Validator = (value: any, length: number): string =>
    value && value.length < length
-      ? `This must be at least ${length} characters`
+      ? `setidaknya harus terdiri dari ${length} characters`
       : '';
 
 interface Props {

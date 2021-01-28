@@ -17,9 +17,9 @@ export const AskPage = () => {
       return { success: question ? true : false };
    };
    return (
-      <Page title="Ask a Question">
+      <Page title="Bertanya">
          <Form
-            submitCaption="Submit Your Question"
+            submitCaption="Submit Pertanyaan"
             validationRules={{
                title: [
                   { validator: required },
@@ -31,11 +31,12 @@ export const AskPage = () => {
                ],
             }}
             onSubmit={handleSubmit}
-            failureMessage="There was a problem with your question"
-            successMessage="Your question was successfully submitted"
+            failureMessage="Ada masalah dengan pertnyaan anda"
+            successMessage="Pertannyaan Anda telah berhasil di Input
+            Klik 'KEMBALI' untuk ke halaman sebelumnya"
          >
-            <Field name="title" label="Title" />
-            <Field name="content" label="Content" type="TextArea" />
+            <Field name="title" label="Judul" />
+            <Field name="content" label="Isi Pertanyaan" type="TextArea" />
          </Form>
       </Page>
    );
