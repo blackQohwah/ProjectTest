@@ -7,16 +7,14 @@ export const Footer = () => {
          <div className="footer-newsletter">
             <div className="container">
                <div className="row justify-content-center">
-                  <div className="col-lg-6">
-                     <h2>Majelis Ta'lim Al-Ikhlas</h2>
-                  </div>
+                  <div className="col-lg-6"></div>
                </div>
             </div>
          </div>
          <div className="footer-top">
             <div className="container">
                <div className="row">
-                  <div className="col-lg-4 col-md-6 footer-contact">
+                  <div className="col-lg-6 col-md-6 footer-contact">
                      <h4>Majelis Ta'lim Al-Ikhlas</h4>
                      <p>
                         A108 Adam Street <br />
@@ -30,26 +28,7 @@ export const Footer = () => {
                         <br />
                      </p>
                   </div>
-
-                  <div className="col-lg-4 col-md-6 footer-links">
-                     <h4>Useful Links</h4>
-                     <ul>
-                        <li>
-                           <i className="bx bx-chevron-right"></i>
-                           <a href="#">Home</a>
-                        </li>
-                        <li>
-                           <i className="bx bx-chevron-right"></i>
-                           <a href="#">About us</a>
-                        </li>
-                        <li>
-                           <i className="bx bx-chevron-right"></i>
-                           <a href="#">Gallery</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div className="col-lg-4 col-md-6 footer-links">
+                  <div className="col-lg-6 col-md-6 footer-links">
                      <h4>Our Social Networks</h4>
                      <p>
                         Cras fermentum odio eu feugiat lide par naso tierra
