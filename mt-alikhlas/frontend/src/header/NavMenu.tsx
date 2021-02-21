@@ -1,5 +1,6 @@
 import React from 'react';
 import './navMenu.css';
+import { FaMosque as Mosque } from 'react-icons/fa';
 
 /**
  * @jsxRuntime classic
@@ -28,19 +29,24 @@ export const NavMenu = () => {
                   color: black;
                `}
             >
-               AL-IKHLAS
+               <Mosque
+                  css={css`
+                     color: green;
+                     font-size: 40px;
+                  `}
+               />
             </a>
          </h1>
-         <nav className="nav-menu d-none d-lg-block">
+         <nav className="nav-menu navbar navbar-expand-lg navbar-light">
             <ul>
-               <li className="active">
+               <li>
                   <a href="index.html">Home</a>
                </li>
                <li>
                   <a href="#about">About</a>
                </li>
                <li>
-                  <a href="#team" className="mr-3">
+                  <a href="#gallery" className="mr-3">
                      Gallery
                   </a>
                </li>

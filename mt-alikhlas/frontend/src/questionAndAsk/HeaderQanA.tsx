@@ -4,6 +4,7 @@ import { fontFamily, fontSize, gray1, gray2, gray5 } from './Styles';
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom';
 import { useAuth } from './Auth';
 import AOS from 'aos';
+import { BsArrowReturnLeft } from 'react-icons/bs';
 
 /** @jsxRuntime classic */
 /** @jsx jsx */
@@ -72,6 +73,11 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                   text-decoration: none;
                `}
             >
+               <BsArrowReturnLeft
+                  css={css`
+                     opacity: 0.7;
+                  `}
+               />
                Kembali
             </Link>
             <form onSubmit={handleSearchSubmit}>

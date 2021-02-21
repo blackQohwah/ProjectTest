@@ -34,7 +34,7 @@ export const QuestionList: FC<Props> = ({ data, renderItem }) => {
             <li
                key={question.questionId}
                css={css`
-                  border-top: 1px solid ${gray5};
+                  border-top: 2px solid ${gray5};
                   :first-of-type {
                      border-top: none;
                   }

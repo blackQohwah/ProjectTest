@@ -9,7 +9,7 @@ import { css, jsx } from '@emotion/react';
 export const Header: FC = ({ children }) => {
    const [navBar, setNavbar] = useState(false);
    const changeBackground = () => {
-      if (window.scrollY >= 500) {
+      if (window.scrollY >= 700) {
          setNavbar(true);
       } else {
          setNavbar(false);

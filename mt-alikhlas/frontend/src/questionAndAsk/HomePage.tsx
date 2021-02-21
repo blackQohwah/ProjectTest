@@ -68,6 +68,30 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
                   Menayakan Pertanyaan
                </PrimaryButton>
             </div>
+            <div
+               css={css`
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin: 10px;
+                  padding: 5px;
+                  color: green;
+                  @keyframes hint {
+                     0% {
+                        -webkit-transform: translateY(0);
+                        opacity: 0.4;
+                     }
+                     100% {
+                        -webkit-transform: translateY(0.4em);
+                        opacity: 0.9;
+                     }
+                  }
+                  -webkit-animation: hint 1s infinite alternate ease-in-out;
+                  animation: hint 0.7s infinite alternate ease-in-out;
+               `}
+            >
+               <span>Klik Judul Pertanyaan Untuk Melihat Detail Jawaban</span>
+            </div>
             {questionsLoading ? (
                <div
                   css={css`

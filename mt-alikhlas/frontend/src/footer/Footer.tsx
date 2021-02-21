@@ -58,9 +58,9 @@ export const Footer = () => {
 
          <div className="container footer-bottom clearfix">
             <div className="copyright">
-               &copy; Copyright{' '}
+               &copy; Copyright
                <strong>
-                  <span>Arsha</span>
+                  <span> Adam </span>
                </strong>
                . All Rights Reserved
             </div>

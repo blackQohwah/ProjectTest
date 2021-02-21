@@ -22,7 +22,12 @@ export const Imageslider = () => {
    //    }
 
    return (
-      <section className="slider" data-aos="fade-up" data-aos-delay="500">
+      <section
+         id="gallery"
+         className="slider"
+         data-aos="fade-up"
+         data-aos-delay="500"
+      >
          <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
          <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
          {SliderData.map((slide, index) => {
@@ -35,10 +40,9 @@ export const Imageslider = () => {
                      <img
                         src={slide.image}
                         alt="zero image"
-                        className="image"
+                        className="image img-fluid"
                      />
                   )}
-                  ;
                </div>
             );
          })}

@@ -27,15 +27,20 @@ export const Question: FC<Props> = ({ data, showContent = true }) => (
             font-size: 19px;
          `}
       >
-         <Link
-            css={css`
-               text-decoration: none;
-               color: ${gray2};
-            `}
-            to={`questions/${data.questionId}`}
-         >
-            {data.title}
-         </Link>
+         <strong>
+            <Link
+               css={css`
+                  text-decoration: none;
+                  color: ${gray2};
+                  font-size: 15px;
+                  text-align: justify;
+                  text-justify: inter-word;
+               `}
+               to={`questions/${data.questionId}`}
+            >
+               {data.title}
+            </Link>
+         </strong>
       </div>
       {showContent && (
          <div
@@ -43,10 +48,12 @@ export const Question: FC<Props> = ({ data, showContent = true }) => (
                padding-bottom: 10px;
                font-size: 15px;
                color: ${gray2};
+               text-align: justify;
+               text-justify: inter-word;
             `}
          >
             {data.content.length > 50
-               ? `${data.content.substring(0, 50)}...`
+               ? `${data.content.substring(0, 100)} .......`
                : data.content}
          </div>
       )}
