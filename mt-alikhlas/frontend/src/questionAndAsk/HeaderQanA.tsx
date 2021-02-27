@@ -51,6 +51,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
          <div
             css={css`
                box-sizing: border-box;
+               margin-top: 20px;
                top: 0;
                width: 100%;
                display: flex;
@@ -80,7 +81,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                />
                Kembali
             </Link>
-            <form onSubmit={handleSearchSubmit}>
+            <form onSubmit={handleSearchSubmit} id="searchForm">
                <input
                   type="text"
                   placeholder="Cari Pertanyaan..."
@@ -95,14 +96,33 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                      border-radius: 3px;
                      color: ${gray2};
                      background-color: white;
-                     width: 200px;
+                     width: 150px;
                      height: 30px;
                      :focus {
                         outline-color: ${gray5};
                      }
                   `}
                />
+               <button
+                  type="submit"
+                  form="searchForm"
+                  value={search}
+                  css={css`
+                     box-sizing: border-box;
+                     background-color: green;
+                     color: white;
+                     border: 1px solid black;
+                     border-radius: 3px;
+                     :focus {
+                        outline-color: ${gray5};
+                     }
+                     margin-left: 3px;
+                  `}
+               >
+                  Cari
+               </button>
             </form>
+
             {!loading &&
                (isAuthenticated ? (
                   <div>

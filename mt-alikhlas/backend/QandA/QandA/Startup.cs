@@ -14,9 +14,7 @@ using System.Threading.Tasks;
 using DbUp;
 using QandA.Data;
 using QandA.Hubs;
-//? import library for auth
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-//? import library for custom autorization 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using QandA.Authorization;

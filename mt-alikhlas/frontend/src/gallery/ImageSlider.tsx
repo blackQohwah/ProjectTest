@@ -6,7 +6,7 @@ import AOS from 'aos';
 
 AOS.init();
 
-export const Imageslider = () => {
+export const ImageSlider = () => {
    const [current, setCurrent] = useState(0);
 
    const nextSlide = () => {

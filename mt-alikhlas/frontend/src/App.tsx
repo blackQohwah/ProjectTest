@@ -11,7 +11,7 @@ import { Hero } from './hero/Hero';
 import { DividerAbout } from './divider/DividerAbout';
 import { DividerQandA } from './divider/DividerQandA';
 import { About } from './about/About';
-import { Imageslider } from './gallery/ImageSlider';
+import { ImageSlider } from './gallery/ImageSlider';
 import { Footer } from './footer/Footer';
 import { HeaderWithRouter as HeaderQandA } from './questionAndAsk/HeaderQanA';
 import { AskPage } from './questionAndAsk/AskPage';
@@ -67,9 +67,11 @@ function App() {
                      </DividerAbout>
                      <LoremText />
                      <About />
-                     <Imageslider />
+                     <LoremText />
+                     <ImageSlider />
                      <LoremText />
                      <DividerQandA />
+                     <LoremText />
                      <LoremText />
                      <HeaderQandA />
                      <Switch>
