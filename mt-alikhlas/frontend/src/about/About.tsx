@@ -25,7 +25,7 @@ export const About = () => {
                      Ratibul Atthos, pada saat itu belum ada pembahasan fiqh dan
                      hadist. Setelah beberapa saat berjalan barulah diadakan
                      kajian fiqh yang disampaikan oleh Ust. Abdurahman LC.MA dan
-                     kemuudian dilengkapi oleh adanya kajian Hadist yang
+                     kemudian dilengkapi oleh adanya kajian Hadist yang
                      disampaikan oleh Ust. Fandy Achmad Mudzakir.
                   </p>
                   <br /> <br />

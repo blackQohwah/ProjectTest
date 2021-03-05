@@ -10,11 +10,11 @@ export const ImageSlider = () => {
    const [current, setCurrent] = useState(0);
 
    const nextSlide = () => {
-      setCurrent(current === 6 ? 0 : current + 1);
+      setCurrent(current === 26 ? 0 : current + 1);
    };
 
    const prevSlide = () => {
-      setCurrent(current === 0 ? 6 : current - 1);
+      setCurrent(current === 0 ? 26 : current - 1);
    };
 
    //    if (!Array.isArray(slides) || slides.length <= 0) {

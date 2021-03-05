@@ -14,7 +14,7 @@ export const Page: FC<Props> = ({ title, children }) => {
       <div
          css={css`
             margin: 0px auto 20px auto;
-            padding: 30px 20px;
+            padding: 10px 20px;
             max-width: 1000px;
          `}
          data-aos="fade-left"

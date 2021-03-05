@@ -17,8 +17,9 @@ export const Footer = () => {
                   <div className="col-lg-6 col-md-6 footer-contact">
                      <h4>Majelis Ta'lim Al-Ikhlas</h4>
                      <p>
-                        A108 Adam Street <br />
-                        New York, NY 535022
+                        JL.Hidup Baru 2 RT 05/10 No 10a
+                        <br />
+                        Gandaria Utara, Keb.Baru, Jakarta Selatan
                         <br />
                         United States <br />
                         <br />
@@ -30,10 +31,7 @@ export const Footer = () => {
                   </div>
                   <div className="col-lg-6 col-md-6 footer-links">
                      <h4>Our Social Networks</h4>
-                     <p>
-                        Cras fermentum odio eu feugiat lide par naso tierra
-                        videa magna derita valies
-                     </p>
+                     <p>Social Media Majelis ta'lim Al-Ikhlas</p>
                      <div className="social-links mt-3">
                         <a href="#" className="twitter">
                            <i className="bx bxl-twitter"></i>
