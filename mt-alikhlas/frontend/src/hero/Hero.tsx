@@ -16,14 +16,6 @@ export const Hero = () => {
                      <a href="#QandA" className="btn-get-started scrollto">
                         Bertanya ???
                      </a>
-                     <a
-                        href="#"
-                        className="venobox btn-watch-video"
-                        data-vbtype="video"
-                        data-autoplay="true"
-                     >
-                        Watch Video <i className="icofont-play-alt-2"></i>
-                     </a>
                   </div>
                </div>
                <div

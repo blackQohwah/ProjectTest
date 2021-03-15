@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
 
 export const Footer = () => {
    return (
@@ -21,11 +22,7 @@ export const Footer = () => {
                         <br />
                         Gandaria Utara, Keb.Baru, Jakarta Selatan
                         <br />
-                        United States <br />
-                        <br />
-                        <strong>Phone:</strong> +1 5589 55488 55
-                        <br />
-                        <strong>Email:</strong> info@example.com
+                        Indonesia <br />
                         <br />
                      </p>
                   </div>
@@ -33,20 +30,19 @@ export const Footer = () => {
                      <h4>Our Social Networks</h4>
                      <p>Social Media Majelis ta'lim Al-Ikhlas</p>
                      <div className="social-links mt-3">
-                        <a href="#" className="twitter">
-                           <i className="bx bxl-twitter"></i>
+                        <a
+                           href="https://web.facebook.com/Majelis-Taklim-Al-Ikhlas-Jakarta-Selatan-406616799756680"
+                           className="facebook"
+                           target="_blank"
+                        >
+                           <AiFillFacebook />
                         </a>
-                        <a href="#" className="facebook">
-                           <i className="bx bxl-facebook"></i>
-                        </a>
-                        <a href="#" className="instagram">
-                           <i className="bx bxl-instagram"></i>
-                        </a>
-                        <a href="#" className="google-plus">
-                           <i className="bx bxl-skype"></i>
-                        </a>
-                        <a href="#" className="linkedin">
-                           <i className="bx bxl-linkedin"></i>
+                        <a
+                           href="https://www.instagram.com/mt_al_ikhlas/"
+                           className="instagram"
+                           target="_blank"
+                        >
+                           <AiFillInstagram />
                         </a>
                      </div>
                   </div>
