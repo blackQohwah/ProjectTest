@@ -8,11 +8,6 @@
   box-shadow: 0 3px 7px 0 rgba(110, 112, 114, 0.21);
 }
 
-.about .content h2 {
-    font-weight: 600px;
-    font-size: 26px;
-  }
-
 .content p {
   text-align: justify;
   text-justify: inter-word;

@@ -15,7 +15,7 @@ export const ProgressBar = () => {
       // return () => window.removeEventListener('scroll', progressBarHandler);
    });
    return (
-      <div>
+      <div className="container">
          <div id="progressBarContainer">
             <div
                id="progressbar"

@@ -92,13 +92,14 @@ namespace QandA.Controllers
         [HttpPost]
         public async Task<ActionResult<QuestionGetSingleResponse>> PostQuestion(QuestionPostRequest questionPostRequest)
         {
+             
             var savedQuestion = await _dataRepository.PostQuestion(new QuestionPostFullRequest
             {
                 Title = questionPostRequest.Title,
                 Content = questionPostRequest.Content,
                 UserId = "",
                 UserName = "Anonymous",
-                Created = DateTime.UtcNow
+                Created = DateTime.Now
             });
             return CreatedAtAction(nameof(GetQuestion), new
             {

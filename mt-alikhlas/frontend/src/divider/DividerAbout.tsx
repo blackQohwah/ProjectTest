@@ -14,7 +14,7 @@ export const DividerAbout: FC = ({ children }) => {
          id="about"
          data-aos="fade-up"
          data-aos-easing="ease-in-out"
-         data-aos-delay="500"
+         data-aos-delay="100"
       >
          <div className="container">
             <div className="row">

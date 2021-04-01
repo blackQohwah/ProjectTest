@@ -62,9 +62,7 @@ function App() {
                         <NavMenu />
                      </Header>
                      <Hero />
-                     <DividerAbout>
-                        <ProgressNav />
-                     </DividerAbout>
+                     <DividerAbout>{/* <ProgressNav /> */}</DividerAbout>
                      <LoremText />
                      <About />
                      <LoremText />

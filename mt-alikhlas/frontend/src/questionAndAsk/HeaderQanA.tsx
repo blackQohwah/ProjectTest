@@ -47,7 +47,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
    const { isAuthenticated, user, loading } = useAuth();
 
    return (
-      <div className="container">
+      <div className="container-fluid">
          <div
             css={css`
                box-sizing: border-box;
@@ -68,7 +68,7 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
             <Link
                to="/"
                css={css`
-                  font-size: 24px;
+                  font-size: 14px;
                   font-weight: bold;
                   color: ${gray1};
                   text-decoration: none;
@@ -91,12 +91,12 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                      box-sizing: border-box;
                      font-family: ${fontFamily};
                      font-size: ${fontSize};
-                     padding: 8px 10px;
+                     padding: 3px;
                      border: 1px solid ${gray5};
                      border-radius: 3px;
                      color: ${gray2};
                      background-color: white;
-                     width: 150px;
+                     width: 140px;
                      height: 30px;
                      :focus {
                         outline-color: ${gray5};
@@ -138,7 +138,6 @@ export const HeaderQandA: FC<RouteComponentProps> = ({ history, location }) => {
                ) : (
                   <Link to="/signin" css={buttonStyle}>
                      <UserIcon />
-                     <span>Sign In</span>
                   </Link>
                ))}
          </div>

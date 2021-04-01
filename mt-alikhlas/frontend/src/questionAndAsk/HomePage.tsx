@@ -51,10 +51,11 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
    return (
       <Page>
          <div
+            className="container-fluid"
             css={css`
                margin: 5px auto 20px auto;
-               padding: 30px 20px;
-               max-width: 1700px;
+               padding: 30px 0px;
+               max-width: 1000px;
             `}
          >
             <div

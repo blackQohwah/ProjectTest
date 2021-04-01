@@ -9,8 +9,8 @@ export const About = () => {
       <section className="about mt-5 p-5">
          <div className="container" data-aos="fade-up" data-aos-delay="500">
             <div className="section-title p-5">
-               <h2>Sekilas Tentang</h2>
-               <h2>Majelis Ta'lim Al-ikhlas</h2>
+               <h3>Sekilas Tentang</h3>
+               <h3>Majelis Ta'lim Al-ikhlas</h3>
             </div>
             <div className="row content">
                <div className="col-lg-6 pt-4 pt-lg-0">

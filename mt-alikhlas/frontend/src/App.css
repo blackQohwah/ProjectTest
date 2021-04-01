@@ -1,13 +1,3 @@
 .App {
   text-align: center;
 }
-
-@-moz-document url-prefix() { /* Disable scrollbar Firefox */
-  html{
-    scrollbar-width: none;
-  }
-}
-::-webkit-scrollbar { /* Disable scroll bar on chrome,safari,opera. */
-  display: none;
-  width: 0;
-}

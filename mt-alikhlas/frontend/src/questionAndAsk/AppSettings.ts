@@ -1,4 +1,4 @@
-export const server = 'https://localhost:44378';
+export const server = 'https://mtalikhlas-backend.azurewebsites.net';
 
 export const webAPIUrl = `${server}/api`;
 

@@ -37,7 +37,7 @@ export const QuestionPage: FC<RouteComponentProps<RouteParams>> = ({
    const [question, setQuestion] = useState<QuestionData | null>(null);
    const setUpSignalRConnection = async (questionId: number) => {
       const connection = new HubConnectionBuilder()
-         .withUrl('https://localhost:44378/questionshub')
+         .withUrl('https://mtalikhlas-backend.azurewebsites.net/questionshub')
          .withAutomaticReconnect()
          .build();
       connection.on('Message', (message: string) => {

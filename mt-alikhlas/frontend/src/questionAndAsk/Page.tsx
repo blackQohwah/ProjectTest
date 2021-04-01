@@ -15,9 +15,9 @@ export const Page: FC<Props> = ({ title, children }) => {
          css={css`
             margin: 0px auto 20px auto;
             padding: 10px 20px;
-            max-width: 1000px;
+            max-width: 1500px;
          `}
-         data-aos="fade-left"
+         data-aos="fade-up"
          data-aos-delay="500"
       >
          {title && <PageTitle> {title} </PageTitle>}

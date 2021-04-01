@@ -18,7 +18,7 @@ export const Question: FC<Props> = ({ data, showContent = true }) => (
       css={css`
          padding: 10px 0px;
       `}
-      data-aos="fade-left"
+      data-aos="fade-up"
       data-aos-delay="500"
    >
       <div
@@ -32,7 +32,7 @@ export const Question: FC<Props> = ({ data, showContent = true }) => (
                css={css`
                   text-decoration: none;
                   color: ${gray2};
-                  font-size: 15px;
+                  font-size: 14px;
                   text-align: justify;
                   text-justify: inter-word;
                `}
@@ -46,7 +46,7 @@ export const Question: FC<Props> = ({ data, showContent = true }) => (
          <div
             css={css`
                padding-bottom: 10px;
-               font-size: 15px;
+               font-size: 12px;
                color: ${gray2};
                text-align: justify;
                text-justify: inter-word;

@@ -24,7 +24,7 @@ export const ImageSlider = () => {
    return (
       <section
          id="gallery"
-         className="slider"
+         className="slider container"
          data-aos="fade-up"
          data-aos-delay="500"
       >
