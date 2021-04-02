@@ -1,22 +1,10 @@
 import { FC } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { HiArrowNarrowDown } from 'react-icons/hi';
-/**
- * @jsxRuntime classic
- * @jsx jsx
- */
-import { css, jsx } from '@emotion/react';
 
 export const DividerAbout: FC = ({ children }) => {
    return (
-      <section
-         id="about"
-         data-aos="fade-up"
-         data-aos-easing="ease-in-out"
-         data-aos-delay="100"
-      >
-         <div className="container">
+      <section id="about">
+         {/* <div className="container">
             <div className="row">
                <div
                   className="col-lg-12"
@@ -47,7 +35,7 @@ export const DividerAbout: FC = ({ children }) => {
                   />
                </div>
             </div>
-         </div>
+         </div> */}
       </section>
    );
 };

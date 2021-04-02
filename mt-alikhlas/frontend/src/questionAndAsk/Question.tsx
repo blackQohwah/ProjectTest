@@ -31,7 +31,7 @@ export const Question: FC<Props> = ({ data, showContent = true }) => (
             <Link
                css={css`
                   text-decoration: none;
-                  color: ${gray2};
+                  color: green;
                   font-size: 14px;
                   text-align: justify;
                   text-justify: inter-word;

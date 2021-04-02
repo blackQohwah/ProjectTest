@@ -91,7 +91,10 @@ export const HomePage: FC<RouteComponentProps> = ({ history, children }) => {
                   animation: hint 0.7s infinite alternate ease-in-out;
                `}
             >
-               <span>Klik Judul Pertanyaan Untuk Melihat Detail Jawaban</span>
+               <span>
+                  Klik Judul Pertanyaan <strong>(yang berwarna hijau)</strong>{' '}
+                  Untuk Melihat Detail Jawaban
+               </span>
             </div>
             {questionsLoading ? (
                <div
