@@ -2,7 +2,7 @@
   "dependencies": {
     "mssql1": {
       "restored": true,
-      "restoreTime": "2021-04-07T14:08:26.2784495Z"
+      "restoreTime": "2021-04-07T13:21:00.3903607Z"
     }
   },
   "parameters": {
@@ -14,7 +14,7 @@
     "mssql1.resourceGroupName": {
       "Name": "mssql1.resourceGroupName",
       "Type": "resourceGroup",
-      "Value": "DefaultResourceGroup-SEA"
+      "Value": "MT-Alikhlas"
     }
   }
 }

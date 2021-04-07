@@ -1,8 +1,12 @@
 {
   "dependencies": {
+    "signalr1": {
+      "restored": true,
+      "restoreTime": "2021-04-07T14:08:45.9699362Z"
+    },
     "mssql1": {
       "restored": true,
-      "restoreTime": "2021-04-07T14:08:26.2784495Z"
+      "restoreTime": "2021-04-07T14:07:52.8090242Z"
     }
   },
   "parameters": {

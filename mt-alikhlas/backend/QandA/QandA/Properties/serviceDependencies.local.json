@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "mssql1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/mtalikhkas-server/databases/MTAlikhlasDB",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/mtalikhlas-dbserver/databases/MTAlikhlas_DB",
       "type": "mssql.azure",
       "connectionId": "DefaultConnection",
       "secretStore": "LocalSecretsFile"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdw2dQEqEgkKjG8FwJNIrWQAAAAACAAAAAAAQZgAAAAEAACAAAAAccD0ccBW+w1t9NtWeLAddhtOVsDeEuL4iwsLvmO5qQwAAAAAOgAAAAAIAACAAAAChD+26QXJICA65IysPYJRITqKUJKGMMS/REpPKwN1PGoAAAAAyaKUx8G1DBRIcq4YV56eG9I5Nt/Aw5k7pGHjBMH09j5DGDfgaHbKS6cu3OerkKjHbgdNz50ILTD1rOvnCKcrRnZRPCWugmP0v0sslcZkZiWC+kRaTv+HwxOVb2+g1eS1pqGGP6C+HmfU2OJQhy1SYROq8nF5xX5tjPIirOXmk/0AAAABtyju0UHRMANlc8Zt9RV18VsalWo0nCbManJt/NdIXVRW968/1Jh3Prrs5+WkY7w3VJUXeEdGlDRlivJ7EoRqJ</EncryptedPassword>
+    <History>True|2021-04-07T14:10:12.1092675Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:mtalikhlas-dbserver.database.windows.net,1433%3bInitial Catalog=MTAlikhlas_DB%3bUser Id=adammasjid%40mtalikhlas-dbserver%3bPassword=Ikhlas100</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

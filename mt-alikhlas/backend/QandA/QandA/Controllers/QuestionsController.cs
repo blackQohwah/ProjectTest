@@ -152,7 +152,7 @@ namespace QandA.Controllers
                 Content = answerPostRequest.Content,
                 UserId = User.FindFirst(ClaimTypes.NameIdentifier).Value,
                 UserName = await GetUserName(),
-                Created = DateTime.UtcNow
+                Created = DateTime.Now
             });
 
             _cache.Remove(answerPostRequest.QuestionId.Value);
