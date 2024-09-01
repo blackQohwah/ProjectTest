@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
 import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
-
+test
 export const Footer = () => {
    return (
       <footer id="footer">
